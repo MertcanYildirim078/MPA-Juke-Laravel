@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('song_id');
             $table->unsignedBigInteger('playlist_id');
-            $table->duration();
+            $table->integer('duration')->nullable();
             $table->string('name');
             $table->string('artist_name');
             $table->timestamps();
